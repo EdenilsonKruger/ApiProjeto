@@ -1,0 +1,44 @@
+﻿@model WebProjeto.Models.Pessoa
+
+@{
+    ViewData["Title"] = "Excluir";
+}
+
+<h1>Excluir</h1>
+
+<h4>Cliente</h4>
+
+<h3>Tem certeza de que deseja excluir esse cliente?</h3>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Delete">
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label class="control-label">Código</label>
+                <input readonly asp-for="Id" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label class="control-label">Nome Fantasia</label>
+                <input readonly asp-for="Nome_Fantasia" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label class="control-label">CNPJ/CPF</label>
+                <input readonly asp-for="Cnpj_Cpf" class="form-control" />
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md-12" style="display: contents;">
+                        <div class="col-md-6">
+                            <input type="submit" value="Confirmar" class="btn btn-danger" />
+                        </div>
+                        <div class="col-md-6" style="text-align: right;">
+                            <a class="btn btn-primary" style="width: 100px;" asp-action="Index">Voltar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
