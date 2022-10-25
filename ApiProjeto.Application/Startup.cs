@@ -1,4 +1,6 @@
+using ApiProjeto.Application.Interfaces;
 using ApiProjeto.Application.Models;
+using ApiProjeto.Application.Service;
 using ApiProjeto.Domain.Entities;
 using ApiProjeto.Domain.Interfaces;
 using ApiProjeto.Infra.Data.Context;
@@ -41,6 +43,7 @@ namespace ApiProjeto.Application
                 });
             });
 
+            services.AddScoped<IPessoaApplicationService, PessoaApplicationService>();
             services.AddScoped<IPessoaRepository, PessoaRepository<Pessoa>>();
             services.AddScoped<IPessoaService, PessoaService>();
 

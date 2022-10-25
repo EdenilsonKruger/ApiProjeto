@@ -1,7 +1,5 @@
-﻿using ApiProjeto.Application.Models;
-using ApiProjeto.Domain.Entities;
-using ApiProjeto.Domain.Interfaces;
-using ApiProjeto.Service.Validators;
+﻿using ApiProjeto.Application.Interfaces;
+using ApiProjeto.Application.Models;
 using Microsoft.AspNetCore.Mvc;
 using System;
 
@@ -12,20 +10,20 @@ namespace ApiProjeto.Application.Controllers
     [ApiConventionType(typeof(DefaultApiConventions))]
     public class PessoaController : ControllerBase
     {
-        private IPessoaService _pessoaService;
+        private readonly IPessoaApplicationService _pessoaApplicationService;
 
-        public PessoaController(IPessoaService pessoaService)
+        public PessoaController(IPessoaApplicationService pessoaApplicationService)
         {
-            _pessoaService = pessoaService;
+            _pessoaApplicationService = pessoaApplicationService;
         }
 
         // GET api/values
         [HttpGet]
         public IActionResult Get()
         {
-            return Execute(() => _pessoaService.GetAll<PessoaModel>());
+            return Execute(() => _pessoaApplicationService.GetAll());
         }
-
+        
         // GET api/values/5
         [HttpGet("{id}")]
         public IActionResult GetById(int id)
@@ -33,7 +31,7 @@ namespace ApiProjeto.Application.Controllers
             if (id == 0)
                 return NotFound();
 
-            return Execute(() => _pessoaService.GetById<PessoaModel>(id));
+            return Execute(() => _pessoaApplicationService.GetById(id));
         }
 
         // POST api/values
@@ -43,7 +41,7 @@ namespace ApiProjeto.Application.Controllers
             if (pessoa == null)
                 return NotFound();
 
-            return Execute(() => _pessoaService.Add<CreatePessoaModel, PessoaModel, ValidatorPessoa>(pessoa));
+            return Execute(() => _pessoaApplicationService.Add(pessoa));
         }
 
         // PUT api/values/5
@@ -53,7 +51,7 @@ namespace ApiProjeto.Application.Controllers
             if (pessoa == null)
                 return NotFound();
 
-            return Execute(() => _pessoaService.Update<UpdatePessoaModel, PessoaModel, ValidatorPessoa>(pessoa));
+            return Execute(() => _pessoaApplicationService.Update(pessoa));
         }
 
         // DELETE api/values/5
@@ -65,7 +63,7 @@ namespace ApiProjeto.Application.Controllers
 
             Execute(() =>
             {
-                _pessoaService.Delete(id);
+                _pessoaApplicationService.Delete(id);
                 return true;
             });
 

@@ -1,8 +1,113 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="obj\Debug\netcoreapp3.1\.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" />
+    <Compile Include="obj\Debug\netcoreapp3.1\ApiProjeto.Application.AssemblyInfo.cs" />
+    <Compile Include="obj\Debug\netcoreapp3.1\ApiProjeto.Application.MvcApplicationPartsAssemblyInfo.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="bin\Debug\netcoreapp3.1\ApiProjeto.Application.deps.json" />
+    <Content Include="bin\Debug\netcoreapp3.1\ApiProjeto.Application.runtimeconfig.dev.json" />
+    <Content Include="bin\Debug\netcoreapp3.1\ApiProjeto.Application.runtimeconfig.json" />
+    <Content Include="bin\Debug\netcoreapp3.1\ApiProjeto.Domain.deps.json" />
+    <Content Include="bin\Debug\netcoreapp3.1\ApiProjeto.Domain.runtimeconfig.dev.json" />
+    <Content Include="bin\Debug\netcoreapp3.1\ApiProjeto.Domain.runtimeconfig.json" />
+    <Content Include="bin\Debug\netcoreapp3.1\ApiProjeto.Infra.Data.deps.json" />
+    <Content Include="bin\Debug\netcoreapp3.1\ApiProjeto.Infra.Data.runtimeconfig.dev.json" />
+    <Content Include="bin\Debug\netcoreapp3.1\ApiProjeto.Infra.Data.runtimeconfig.json" />
+    <Content Include="bin\Debug\netcoreapp3.1\ApiProjeto.Service.deps.json" />
+    <Content Include="bin\Debug\netcoreapp3.1\ApiProjeto.Service.runtimeconfig.dev.json" />
+    <Content Include="bin\Debug\netcoreapp3.1\ApiProjeto.Service.runtimeconfig.json" />
+    <Content Include="bin\Debug\netcoreapp3.1\appsettings.Development.json" />
+    <Content Include="bin\Debug\netcoreapp3.1\appsettings.json" />
+    <Content Include="obj\ApiProjeto.Application.csproj.nuget.dgspec.json" />
+    <Content Include="obj\Debug\netcoreapp3.1\ApiProjeto.Application.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\netcoreapp3.1\project.razor.vs.json" />
+    <Content Include="obj\project.assets.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="ApiProjeto.Application.csproj" />
+    <None Include="bin\Debug\netcoreapp3.1\ApiProjeto.Application.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\ApiProjeto.Application.exe" />
+    <None Include="bin\Debug\netcoreapp3.1\ApiProjeto.Application.pdb" />
+    <None Include="bin\Debug\netcoreapp3.1\ApiProjeto.Domain.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\ApiProjeto.Domain.exe" />
+    <None Include="bin\Debug\netcoreapp3.1\ApiProjeto.Domain.pdb" />
+    <None Include="bin\Debug\netcoreapp3.1\ApiProjeto.Infra.Data.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\ApiProjeto.Infra.Data.exe" />
+    <None Include="bin\Debug\netcoreapp3.1\ApiProjeto.Infra.Data.pdb" />
+    <None Include="bin\Debug\netcoreapp3.1\ApiProjeto.Service.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\ApiProjeto.Service.exe" />
+    <None Include="bin\Debug\netcoreapp3.1\ApiProjeto.Service.pdb" />
+    <None Include="bin\Debug\netcoreapp3.1\AutoMapper.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\FluentValidation.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll" />
+    <None Include="obj\ApiProjeto.Application.csproj.nuget.g.props" />
+    <None Include="obj\ApiProjeto.Application.csproj.nuget.g.targets" />
+    <None Include="obj\Debug\netcoreapp3.1\ApiProjeto.Application.AssemblyInfoInputs.cache" />
+    <None Include="obj\Debug\netcoreapp3.1\ApiProjeto.Application.assets.cache" />
+    <None Include="obj\Debug\netcoreapp3.1\ApiProjeto.Application.csproj.AssemblyReference.cache" />
+    <None Include="obj\Debug\netcoreapp3.1\ApiProjeto.Application.csproj.BuildWithSkipAnalyzers" />
+    <None Include="obj\Debug\netcoreapp3.1\ApiProjeto.Application.csproj.CopyComplete" />
+    <None Include="obj\Debug\netcoreapp3.1\ApiProjeto.Application.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\netcoreapp3.1\ApiProjeto.Application.dll" />
+    <None Include="obj\Debug\netcoreapp3.1\ApiProjeto.Application.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="obj\Debug\netcoreapp3.1\ApiProjeto.Application.genruntimeconfig.cache" />
+    <None Include="obj\Debug\netcoreapp3.1\ApiProjeto.Application.MvcApplicationPartsAssemblyInfo.cache" />
+    <None Include="obj\Debug\netcoreapp3.1\ApiProjeto.Application.pdb" />
+    <None Include="obj\Debug\netcoreapp3.1\ApiProjeto.Application.RazorTargetAssemblyInfo.cache" />
+    <None Include="obj\Debug\netcoreapp3.1\apphost.exe" />
+    <None Include="obj\Debug\netcoreapp3.1\staticwebassets\ApiProjeto.Application.StaticWebAssets.Manifest.cache" />
+    <None Include="obj\project.nuget.cache" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
